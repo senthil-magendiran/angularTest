@@ -1,0 +1,29 @@
+.landing-Slider {
+  height: 450px;
+  background-color: rgb(223, 223, 223);
+
+  .top-offer-slides {
+    display: flex;
+    div {
+      display: flex;
+    align-items: center;
+    text-align: center;
+      width: 50%;
+
+      p{
+        font-size: 30px;
+    line-height: 50px;
+    text-align: initial;
+    padding: 0 50px;
+    strong {
+      color: red;
+    }
+      }
+      img{
+        height: 450px;
+    width: 100%;
+    object-fit: contain;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+<div class="trending-now-container">
+  <app-subheading sliderTitle="TRENDING NOW"></app-subheading>
+  <swiper class="trending-slider" slidesPerView="2.5" navigation="true">
+    <ng-container *ngFor="let items of trendingItems">
+    <ng-template swiperSlide>
+      <div class="slider-with-text-image">
+        <img src={{items.image}} alt="" />
+        <div class="text-wrapper">
+          <h1>Fresh</h1>
+          <h2>Arrivals</h2>
+          <p>{{items.description}}</p>
+        </div>
+      </div>
+    </ng-template>
+  </ng-container>
+  </swiper>
+</div>

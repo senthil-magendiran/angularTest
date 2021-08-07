@@ -1,0 +1,34 @@
+<div class="app-footer-wrapper">
+    <div class="left-wrapper">
+        <div class="categories-wrapper">
+            <p *ngFor="let list of categoryList">{{list}}</p>
+        </div>
+        <div class="collections-wrapper">
+            <p *ngFor="let list of collectionsList; let last = last;">{{list}}
+                <span>|</span>
+            </p>
+        </div>
+    </div>
+    <div class="mid-wrapper">
+        <img class="nalli-logo" src="../../../assets/icons/nalli-logo.svg" alt="">
+        <p class="nalli-silk-content"> &#9678;2015 Nalli Silks. All Rights Reserved.</p>
+    </div>
+    <div class="right-wrapper">
+        <div class="about-socialmedia-icons">
+            <div class="categories-wrapper">
+                <p *ngFor="let list of AboutList">{{list}}</p>
+            </div>
+            <div class="social-media-icons">
+                <img class="social-ic" src="../../../assets/icons/facebook.svg" alt="">
+                <img class="social-ic" src="../../../assets/icons/twitter.svg" alt="">
+                <img class="social-ic" src="../../../assets/icons/google-plus.svg" alt="">
+                <img class="social-ic" src="../../../assets/icons/pinterest.svg" alt="">
+            </div>
+        </div>
+        <div class="collections-wrapper">
+            <p *ngFor="let list of terms">{{list}}
+                <span>|</span>
+            </p>
+        </div>
+    </div>
+</div>

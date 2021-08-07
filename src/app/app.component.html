@@ -1,0 +1,13 @@
+<div class="app-layout">
+    <div class="app-header">
+        <app-header></app-header>
+    </div>
+    <div class="app-container">
+        <app-landing-slider></app-landing-slider>
+        <app-trending-now-slider></app-trending-now-slider>
+        <app-common-slider sliderTitle="NEW ARRIVALS" [products]="newArrivals"></app-common-slider>
+        <app-common-slider sliderTitle="RECENTLY VIEWED" [products]="recentItems"></app-common-slider>
+        <app-common-slider sliderTitle="SIMILAR PRODUCTS" [products]="similarItems"></app-common-slider>
+        <app-footer></app-footer>
+    </div>
+</div>

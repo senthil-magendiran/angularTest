@@ -1,0 +1,72 @@
+.app-footer-wrapper {
+    background-color: #b0b0b036;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    border: 1px solid #b0b0b066;
+    margin-top: 50px;
+    .left-wrapper {
+        flex: 1;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .right-wrapper {
+        flex: 1;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .categories-wrapper {
+        display: flex;
+        margin: 20px 0;
+        p {
+            margin-right: 20px;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+    }
+    .collections-wrapper {
+        display: flex;
+        margin: 20px 0;
+        span {
+            margin: 0 5px;
+        }
+        p {
+            color: #808080;
+            margin-bottom: 0;
+        }
+    }
+    .about-socialmedia-icons {
+        display: flex;
+        align-items: center;
+        height: 20px;
+        .social-media-icons {
+            display: flex;
+            align-items: center;
+            padding: 3px 0;
+
+            .social-ic {
+                width: 25px;
+                margin: 0 10px;
+            }
+        }
+    }
+    .mid-wrapper {
+        text-align: center;
+        flex: none;
+        .nalli-logo {
+            width: 80px;
+            filter: grayscale(100%);
+        }
+        .nalli-silk-content {
+            color: #808080;
+        }
+    }
+}

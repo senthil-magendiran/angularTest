@@ -1,0 +1,146 @@
+.sale-item {
+  position: relative;
+  width: fit-content;
+  .product-image {
+    width: 250px;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .product-name,
+  .product-category {
+    font-family: "Roboto";
+    font-weight: 400;
+    color: #9e9e9e;
+    margin: 0;
+  }
+
+  .star-rating {
+    .fa {
+      padding: 0 2px;
+      color: #acabab;
+    }
+  }
+
+  .sale-amount {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .add-fav {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    cursor: pointer;
+    &.fav-active {
+      color: red;
+    }
+  }
+
+  .add-cart {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    cursor: pointer;
+
+    &.cart-active {
+      color: red;
+    }
+  }
+}
+
+.one-star-rating {
+  .fa:first-child {
+    padding: 0 2px;
+    color: red;
+  }
+
+  .fa {
+    padding: 0 2px;
+    color: #acabab;
+  }
+}
+
+.two-star-rating {
+  .fa {
+    padding: 0 2px;
+    color: #acabab;
+  }
+
+  .fa:first-child {
+    color: red;
+  }
+
+  .fa:nth-child(2) {
+    color: orange;
+  }
+}
+
+.three-star-rating {
+  .fa {
+    padding: 0 2px;
+    color: #acabab;
+  }
+
+  .fa:first-child {
+    color: red;
+  }
+
+  .fa:nth-child(2) {
+    color: orange;
+  }
+
+  .fa:nth-child(3) {
+    color: yellow;
+  }
+}
+
+.four-star-rating {
+  .fa {
+    padding: 0 2px;
+    color: #acabab;
+  }
+
+  .fa:first-child {
+    color: red;
+  }
+
+  .fa:nth-child(2) {
+    color: orange;
+  }
+
+  .fa:nth-child(3) {
+    color: yellow;
+  }
+
+  .fa:nth-child(4) {
+    color: lightgreen;
+  }
+}
+
+.five-star-rating {
+  .fa {
+    padding: 0 2px;
+    color: #acabab;
+  }
+
+  .fa:first-child {
+    color: red;
+  }
+
+  .fa:nth-child(2) {
+    color: orange;
+  }
+
+  .fa:nth-child(3) {
+    color: yellow;
+  }
+
+  .fa:nth-child(4) {
+    color: lightgreen;
+  }
+
+  .fa:nth-child(5) {
+    color: darkgreen;
+  }
+}

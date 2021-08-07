@@ -1,0 +1,14 @@
+<div class="landing-Slider">
+  <swiper [slidesPerView]="1" [autoplay]="autoPlayProps">
+    <ng-container *ngFor="let offer of landingOffers">
+    <ng-template swiperSlide>
+      <div class="top-offer-slides">
+        <div><p innerHTML={{offer.description}}></p></div>
+        <div>
+          <img src={{offer.image}} alt="" />
+        </div>
+      </div>
+    </ng-template>
+  </ng-container>
+  </swiper>
+</div>
