@@ -1,6 +1,5 @@
 <div class="application-header">
   <div class="left-wrap">
-    <span class="mob-nav-menu" (click)="openNav()">&#9776;</span>
     <div class="logo-wrapper">
       <img class="brand-logo" src="../../../assets/logo/app-logo.png" alt="" />
     </div>
@@ -21,11 +20,16 @@
     </div>
   </div>
   <div class="right-wrap">
+    <div class="search-container">
+      <input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">
+      <label class="button searchbutton" for="searchright"><span class="mglass">&#9906;</span></label>
+    </div>
     <div class="icons-wrapper">
       <i class="fa fa-heart" [matBadge]="likebadge" aria-hidden="true"></i>
       <i class="fa fa-shopping-cart" [matBadge]="cartbadge" aria-hidden="true"></i>
     </div>
     <div class="profile-picture"><img src="../../../assets/profile.jpg" alt=""></div>
+    <span class="mob-nav-menu" (click)="openNav()">&#9776;</span>
   </div>
 </div>
 
