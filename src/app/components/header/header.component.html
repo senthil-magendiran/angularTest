@@ -20,9 +20,8 @@
     </div>
   </div>
   <div class="right-wrap">
-    <div class="search-container">
-      <input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">
-      <label class="button searchbutton" for="searchright"><span class="mglass">&#9906;</span></label>
+    <div class="search-container" (click)="openNav()">
+      <span class="search-button">&#9906;</span>
     </div>
     <div class="icons-wrapper">
       <i class="fa fa-heart" [matBadge]="likebadge" aria-hidden="true"></i>
@@ -35,6 +34,9 @@
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  <div class="search-header">
+    <input type="search" placeholder="Product Search.." class="search-ip" />
+  </div>
   <a href="#">Women</a>
   <a href="#">Men</a>
   <a href="#">Baby & Kids</a>
