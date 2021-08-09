@@ -43,7 +43,7 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 767px) {
   .trending-now-container {
     ::ng-deep .swiper-slide {
       width: calc(100vw - 100px) !important;

@@ -35,6 +35,11 @@
             font-weight: 500;
             margin-bottom: 0;
             white-space: nowrap;
+            cursor: pointer;
+            color: #121212;
+            &:hover {
+                color: #a21212;
+            }
         }
     }
     .collections-wrapper {
@@ -49,6 +54,7 @@
         p {
             color: #808080;
             margin-bottom: 0;
+            cursor: pointer;
         }
     }
     .about-socialmedia-icons {
@@ -64,6 +70,7 @@
             .social-ic {
                 width: 25px;
                 margin: 0 10px;
+                cursor: pointer;
             }
         }
     }
