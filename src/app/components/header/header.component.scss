@@ -220,7 +220,7 @@
         display: block;
       }
       .search-container {
-        display: block;
+        display: inline-flex;
         // position: absolute;
         .search:focus {
           width: calc(100vw - 70px);
