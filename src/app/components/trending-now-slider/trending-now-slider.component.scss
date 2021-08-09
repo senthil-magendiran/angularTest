@@ -44,8 +44,13 @@
 }
 
 @media (max-width: 576px) {
-  .trending-now-container .slider-with-text-image img {
-    width: 90vw;
-    min-width: auto;
+  .trending-now-container {
+    ::ng-deep .swiper-slide {
+      width: calc(100vw - 100px) !important;
+      margin-right: 50px;
+    }
+    .slider-with-text-image img {
+      min-width: auto;
+    }
   }
 }
