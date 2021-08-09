@@ -1,28 +1,63 @@
 .landing-Slider {
   height: 450px;
-  background-color: rgb(223, 223, 223);
+  // background-color: rgb(223, 223, 223);
+  background-color: #edefec;
 
   .top-offer-slides {
     display: flex;
-    div {
+    .slide-content {
       display: flex;
-    align-items: center;
-    text-align: center;
+      align-items: center;
+      text-align: center;
       width: 50%;
-
-      p{
+      .desc-txt {
         font-size: 30px;
-    line-height: 50px;
-    text-align: initial;
-    padding: 0 50px;
-    strong {
-      color: red;
-    }
+        line-height: 50px;
+        text-align: initial;
+        padding: 0 50px;
+        strong {
+          color: red;
+        }
       }
-      img{
+    }
+    .slide-image {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      width: 50%;
+      img {
         height: 450px;
-    width: 100%;
-    object-fit: contain;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .landing-Slider .top-offer-slides {
+    .slide-content {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #0000002e;
+      .desc-txt {
+        color: #fff;
+      }
+    }
+    .slide-image {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      img {
+        height: 450px;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
       }
     }
   }

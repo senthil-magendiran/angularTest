@@ -1,5 +1,6 @@
 <div class="application-header">
   <div class="left-wrap">
+    <span class="mob-nav-menu" (click)="openNav()">&#9776;</span>
     <div class="logo-wrapper">
       <img class="brand-logo" src="../../../assets/logo/app-logo.png" alt="" />
     </div>
@@ -15,10 +16,7 @@
     <div class="search-wrapper">
       <div class="input-with-icon">
         <i class="fa fa-search icon"></i>
-        <input class="input-field" type="text" />
-      </div>
-      <div class="menu-wrapper">
-        <i class="fa fa-bars" aria-hidden="true"></i>
+        <input class="input-field" placeholder="Search" type="text" />
       </div>
     </div>
   </div>
@@ -29,4 +27,13 @@
     </div>
     <div class="profile-picture"><img src="../../../assets/profile.jpg" alt=""></div>
   </div>
+</div>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  <a href="#">Women</a>
+  <a href="#">Men</a>
+  <a href="#">Baby & Kids</a>
+  <a href="#">Home Fashion</a>
+  <a href="#">Offers</a>
 </div>

@@ -6,13 +6,23 @@
   .left-wrap {
     flex: 1;
     display: flex;
+    align-items: center;
+    .mob-nav-menu {
+      display: none;
+      font-size: 30px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
   }
   .mid-wrap {
     flex: none;
+    align-items: center;
+    display: flex;
   }
   .right-wrap {
     flex: 1;
     display: flex;
+    align-items: center;
     justify-content: flex-end;
   }
 
@@ -34,30 +44,31 @@
     }
   }
 
-  .input-with-icon {
-    width: 100%;
-    i {
-      position: absolute;
-    }
-
-    .icon {
-      padding: 10px;
-      color: #6d716d;
-      text-align: center;
-    }
-
-    .input-field {
-      width: 250px;
-      padding: 10px 10px 10px 30px;
-      text-align: left;
-    }
-  }
-
   .search-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     // margin: 0 56px;
+
+    .input-with-icon {
+      width: 100%;
+      i {
+        position: absolute;
+      }
+
+      .icon {
+        padding: 10px;
+        color: #6d716d;
+        text-align: center;
+      }
+
+      .input-field {
+        width: 250px;
+        padding: 10px 10px 10px 35px;
+        text-align: left;
+        border: 1px solid #ddd;
+      }
+    }
   }
 
   .menu-wrapper {
@@ -91,6 +102,66 @@
       width: 35px;
       border-radius: 50px;
       border: 1px solid #000;
+    }
+  }
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #a21212;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav {
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    cursor: pointer;
+  }
+  a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #eee;
+    display: block;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+    a {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .application-header {
+    padding: 15px 20px;
+
+    .left-wrap {
+      .mob-nav-menu {
+        display: block;
+      }
+      .navigation-links {
+        display: none;
+      }
     }
   }
 }

@@ -1,4 +1,8 @@
 .common-slider-container {
+  ::ng-deep .swiper-slide {
+    margin-right: 25px !important;
+    width: auto !important;
+  }
 }
 .swiper-container {
   padding: 0 50px;

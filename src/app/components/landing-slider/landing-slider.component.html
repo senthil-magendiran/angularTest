@@ -1,14 +1,16 @@
 <div class="landing-Slider">
   <swiper [slidesPerView]="1" [autoplay]="autoPlayProps">
     <ng-container *ngFor="let offer of landingOffers">
-    <ng-template swiperSlide>
-      <div class="top-offer-slides">
-        <div><p innerHTML={{offer.description}}></p></div>
-        <div>
-          <img src={{offer.image}} alt="" />
+      <ng-template swiperSlide>
+        <div class="top-offer-slides">
+          <div class="slide-content">
+            <p class="desc-txt" innerHTML={{offer.description}}></p>
+          </div>
+          <div class="slide-image">
+            <img src={{offer.image}} class="cover-img" alt="cover-img" />
+          </div>
         </div>
-      </div>
-    </ng-template>
-  </ng-container>
+      </ng-template>
+    </ng-container>
   </swiper>
 </div>
