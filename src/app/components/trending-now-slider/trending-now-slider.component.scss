@@ -1,6 +1,7 @@
 .trending-now-container {
   ::ng-deep .swiper-slide {
     margin-right: 15px;
+    width: auto !important;
   }
   .slider-with-text-image {
     position: relative;
@@ -30,6 +31,7 @@
     }
     img {
       width: 100%;
+      min-width: 350px;
       height: 350px;
       object-fit: cover;
       object-position: top;
@@ -38,5 +40,12 @@
 
   .swiper-container {
     padding: 0 50px 0 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .trending-now-container .slider-with-text-image img {
+    width: 90vw;
+    min-width: auto;
   }
 }
