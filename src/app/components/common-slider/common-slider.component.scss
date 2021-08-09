@@ -7,3 +7,20 @@
 .swiper-container {
   padding: 0 50px;
 }
+
+@media (max-width: 767px) {
+  .common-slider-container {
+    ::ng-deep .swiper-wrapper {
+      // transform: none !important;
+    }
+
+    ::ng-deep .swiper-slide {
+      width: calc(100vw - 100px) !important;
+      margin-right: 50px !important;
+    }
+
+    .slider-with-text-image img {
+      min-width: auto;
+    }
+  }
+}
