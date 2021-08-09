@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { ILandingProps } from 'src/app/models/products.model';
-import { ProductService } from 'src/app/services/product-service.service';
+import { ILandingProps } from '../../models/products.model';
+import { ProductService } from '../../services/product-service.service';
 
 import SwiperCore, {
   Navigation,

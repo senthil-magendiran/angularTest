@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Iproducts } from 'src/app/models/products.model';
+import { Iproducts } from '../../models/products.model';
 
 import SwiperCore, {
   Navigation,
