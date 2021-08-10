@@ -1,6 +1,6 @@
 <div class="common-slider-container">
   <app-subheading sliderTitle="{{ sliderTitle }}"></app-subheading>
-  <swiper class="common-swiper" [slidesPerView]="4" [spaceBetween]="60" loop="true" navigation="true">
+  <swiper class="common-swiper" slidesPerView="auto" loop="true" navigation="true">
     <ng-container class="common-slider" *ngFor="let product of products">
       <ng-template swiperSlide>
         <app-sale-item productImage={{product.image}} productName="{{ product.title }}"
