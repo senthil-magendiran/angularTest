@@ -3,15 +3,15 @@
     <p class="product-name">{{productName}}</p>
     <p class="product-category">{{productCategory}}</p>
     <p class="sale-amount"><i class="fa fa-inr" aria-hidden="true"></i>{{saleAmount}}</p>
-    <div [class]="rating">
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
+    <div [class]="rating" class="star-rating-wrapper">
+        <i class="fa fa-star" aria-hidden="true" *ngFor="let star of stars; let i as index"
+            (click)="getStarRating(i)"></i>
+
     </div>
 
-    <i class="fa fa-heart add-fav" [ngClass]="{'fav-active' : favSelect}" aria-hidden="true" (click)="likeSupport()"></i>
-    <i class="fa fa-shopping-cart add-cart" [ngClass]="{'cart-active' : cartSelect}" (click)="cartSupport()" aria-hidden="true"></i>
+    <i class="fa fa-heart add-fav" [ngClass]="{'fav-active' : favSelect}" aria-hidden="true"
+        (click)="likeSupport()"></i>
+    <i class="fa fa-shopping-cart add-cart" [ngClass]="{'cart-active' : cartSelect}" (click)="cartSupport()"
+        aria-hidden="true"></i>
 
 </div>

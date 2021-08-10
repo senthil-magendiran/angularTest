@@ -17,6 +17,8 @@ export class SaleItemComponent {
   public favSelect: boolean = false
   public cartSelect: boolean = false
 
+  stars = [1, 2, 3, 4, 5];
+
   constructor(
     public favservice: FavouriteService,
     public cartservice: CartService
@@ -44,5 +46,26 @@ export class SaleItemComponent {
       this.cartservice.cartSupport = this.cartservice.cartSupport - 1
     }
     this.cartservice.setSharedData(this.cartservice.cartSupport)
+  }
+  public getStarRating(rating: number) {
+    switch (rating) {
+      case 1:
+        this.rating = "one-star-rating";
+        return 'one-star-rating';
+      case 2:
+        this.rating = "two-star-rating";
+        return 'two-star-rating';
+      case 3:
+        this.rating = "three-star-rating";
+        return 'three-star-rating';
+      case 4:
+        this.rating = "four-star-rating";
+        return 'four-star-rating';
+      case 5:
+        this.rating = "five-star-rating";
+        return 'five-star-rating';
+      default:
+        break;
+    }
   }
 }

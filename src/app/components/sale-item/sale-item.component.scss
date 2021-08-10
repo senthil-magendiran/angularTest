@@ -62,6 +62,9 @@
       color: red;
     }
   }
+  .star-rating-wrapper {
+    cursor: pointer;
+  }
 }
 
 .one-star-rating {
@@ -73,6 +76,7 @@
   .fa {
     padding: 0 2px;
     color: #acabab;
+    cursor: pointer;
   }
 }
 
