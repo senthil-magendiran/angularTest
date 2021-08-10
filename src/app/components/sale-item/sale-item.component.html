@@ -4,7 +4,7 @@
     <p class="product-category">{{productCategory}}</p>
     <p class="sale-amount"><i class="fa fa-inr" aria-hidden="true"></i>{{saleAmount}}</p>
     <div [class]="rating" class="star-rating-wrapper">
-        <i class="fa fa-star" aria-hidden="true" *ngFor="let star of stars; let i as index"
+        <i class="fa fa-star" aria-hidden="true" *ngFor="let star of stars; let i = index"
             (click)="getStarRating(i)"></i>
 
     </div>
